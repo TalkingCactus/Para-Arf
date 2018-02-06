@@ -483,7 +483,7 @@ proc/get_radio_key_from_channel(var/channel)
 		var/rendered = "<span class='game say'><span class='name'>[name]</span> [not_heard].</span>"
 		for(var/mob/M in watching)
 			M.show_message(rendered, 2)
-
+	say_log += "(WHISPER) [message]"
 	log_whisper("[name]/[key] : [message]")
 	return 1
 
